@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151102163609) do
+ActiveRecord::Schema.define(version: 20151102171330) do
 
   create_table "task_lists", force: :cascade do |t|
     t.string   "Name"
@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 20151102163609) do
 
   create_table "tasks", force: :cascade do |t|
     t.string   "Title"
-    t.string   "Dercription"
+    t.string   "Description"
     t.integer  "Priority"
     t.date     "DueDate"
     t.boolean  "isCompletedToggle"

@@ -2,14 +2,14 @@
 
 one:
   Title: MyString
-  Dercription: MyString
+  Description: MyString
   Priority: 1
   DueDate: 2015-11-02
-  isCompletedToggle: 
+  isCompletedToggle: false
 
 two:
   Title: MyString
-  Dercription: MyString
+  Description: MyString
   Priority: 1
   DueDate: 2015-11-02
-  isCompletedToggle: 
+  isCompletedToggle: false
