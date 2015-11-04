@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @task.Title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @task.Description %>
+</p>
+
+<p>
+  <strong>Priority:</strong>
+  <%= @task.Priority %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @task.Due_Date %>
+</p>
+
+<p>
+  <strong>Is completed toggle:</strong>
+  <%= @task.Is_Completed_Toggle %>
+</p>
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>
