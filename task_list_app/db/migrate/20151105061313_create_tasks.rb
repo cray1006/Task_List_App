@@ -4,8 +4,10 @@ class CreateTasks < ActiveRecord::Migration
       t.string :Title
       t.text :Description
       t.integer :Priority
-      t.date :Due_Date
-      t.boolean :Is_Completed_Toggle
+      t.date :DueDate
+      t.boolean :IsCompleted
+      
+      t.references :task_list, index: true, foreign_key: true
 
       t.timestamps null: false
     end

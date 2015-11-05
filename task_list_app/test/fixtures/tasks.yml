@@ -4,12 +4,12 @@ one:
   Title: MyString
   Description: MyText
   Priority: 1
-  Due_Date: 2015-11-04
-  Is_Completed_Toggle: false
+  DueDate: 2015-11-05
+  IsCompleted: false
 
 two:
   Title: MyString
   Description: MyText
   Priority: 1
-  Due_Date: 2015-11-04
-  Is_Completed_Toggle: false
+  DueDate: 2015-11-05
+  IsCompleted: false
