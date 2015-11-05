@@ -27,7 +27,7 @@
 
 <p>
 	<strong>List:</strong>
-	<%= @task.task_list.Name%>
+	<%= @task.task_list.Name if @task.task_list%>
 </p>
 
 <%= link_to 'Edit', edit_task_path(@task) %> |

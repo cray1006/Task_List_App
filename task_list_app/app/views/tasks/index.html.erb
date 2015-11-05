@@ -23,7 +23,7 @@
         <td><%= task.Priority %></td>
         <td><%= task.DueDate %></td>
         <td><%= task.IsCompleted %></td>
-		<td><%= task.task_list.Name%></td>
+		<td><%= task.task_list.Name if task.task_list%></td>
         <td><%= link_to 'Show', task %></td>
         <td><%= link_to 'Edit', edit_task_path(task) %></td>
         <td><%= link_to 'Destroy', task, method: :delete, data: { confirm: 'Are you sure?' } %></td>
