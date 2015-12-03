@@ -10,6 +10,10 @@
   <%= @task_list.Description %>
 </p>
 
+<p>
+	<strong>Tasks:</strong>
+</p>
+
 <ul>
 	<% @task_list.tasks.each do |task|%>
 	<li><%= task.Title%></li>
