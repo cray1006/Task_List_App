@@ -8,17 +8,28 @@
 </head>
 <body>
 	<header>
-		<h1>To Do List</h1>
+		<h1>Task List App</h1>
 	</header>
 	
 	<div id = "sidebar">
 		<h2>Task Lists</h2>
+		<ul>
+			<% @all_task_lists.each do |task_list| %>
+			<li><%= link_to "#{task_list.Name}", task_list %></li>
+			<% end %>
+		</ul>
+		<p><%= link_to 'New Task List', new_task_list_path %><br>
+		<%= link_to "Task Lists", task_lists_path%></p>
+		
+		<p><%= link_to 'New Task', new_task_path %><br>
+		<%= link_to "Tasks", tasks_path%></p>
 	</div>
+	
+	<%= yield%>
 	
 	<footer>
 		coptyright 2015 | Christopher Ray (for MGTI40660)
 	</footer>
 	
-	<%= yield%>
 </body>
 </html>
