@@ -1,5 +1,6 @@
-class TaskListsController < ApplicationController
+class TaskListsController < ProtectedController
   before_action :set_task_list, only: [:show, :edit, :update, :destroy]
+  before_action :require_login
 
   # GET /task_lists
   # GET /task_lists.json

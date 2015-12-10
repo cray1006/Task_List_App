@@ -1,5 +1,6 @@
-class TasksController < ApplicationController
+class TasksController < ProtectedController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
+  before_action :require_login
 
   # GET /tasks
   # GET /tasks.json
@@ -69,6 +70,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:Title, :Description, :Priority, :DueDate, :IsCompleted, :task_list_id)
+      params.require(:task).permit(:Title, :Description, :Priority, :DueDate, :IsCompleted, :task_list_id, :user_id)
     end
 end
